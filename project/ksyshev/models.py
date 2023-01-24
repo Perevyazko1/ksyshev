@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Post(models.Model):
+    date_load = models.DateTimeField(auto_now_add=True, verbose_name='Дата загрузки')
+    image = models.ImageField(upload_to='images/', default=None)
