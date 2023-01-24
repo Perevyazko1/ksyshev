@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from .models import Post
+from .models import Post, Collage
 
 class PostAdmin(admin.ModelAdmin):
     model = Post
@@ -10,7 +10,14 @@ class PostAdmin(admin.ModelAdmin):
     def get_html_photo(self, object):
         return mark_safe(f"<img src='{object.image.url}'width=50")
 
+class CollageAdmin(admin.ModelAdmin):
+    model = Collage
+    list_display = ('date_load', 'get_html_photo')
+
+    def get_html_photo(self, object):
+        return mark_safe(f"<img src='{object.image.url}'width=50")
 
 admin.site.register(Post, PostAdmin)
+admin.site.register(Collage, CollageAdmin)
 
 
