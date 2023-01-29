@@ -1,4 +1,6 @@
 from datetime import datetime
+
+from django.core.paginator import Paginator
 from django.utils import timezone
 
 from django import template
@@ -39,14 +41,20 @@ def url_replace(context, **kwargs):
 def current_hour():
     return timezone.localtime(timezone.now()).hour
 
-@register.inclusion_tag('all_photos.html')
-def get_photo():
-    photos = Post.objects.all()
-    return {'photos' : photos}
+@register.inclusion_tag('all_photos.html', takes_context=True)
+def get_photo(context):
+    photos = Post.objects.order_by('id')
+    p = Paginator(photos, 6)
+    request = context['request']
+    page_num = request.GET.get('page',1)
+    page = p.page(page_num)
+    print(page)
+
+    return {'photos': photos, 'items': page}
 
 
 @register.inclusion_tag('all_collage.html')
 def get_callage():
     collages = Collage.objects.all()
-    return {'collages' : collages}
+    return {'collages': collages}
 
