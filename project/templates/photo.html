@@ -1,51 +1,60 @@
 {% extends 'default.html' %}
+{% load custom_filters %}
+{% load custom_tags %}
+
+
 
 <html id="htmlID" lang="en">
 {% block content %}
-
-	<meta charset="UTF-8">
+<meta charset="UTF-8">
         <div class="routerViewWrapper">
             <div class="sectionWrapper mainContentMenuAdjusted inViewPoint">
                 <section id="KODsd450sZrZfql2" data-bgimg="" data-type="Section" class="Section pbEdit" style="padding: 5vh 5vw;">
                     <div data-elements-position="top" class="pbElements pbSortable">
                         <h1 data-type="Header" id="McFxeDpkkc4BsZPE" class="Header pbEdit" style="margin-bottom: 0.7em; max-width: 1200px;">ФОТО</h1></div>
-                    <div data-type="LinkPage" id="MQZZmn0YKPUGwWYX" class="Gallery pbEdit sameRatio portraits bottom1 zoom-small" style="margin-top: 4em; margin-bottom: 4em; row-gap: 1vw; column-gap: 1vw; grid-template-columns: repeat(3, 1fr);">
+                    <div data-type="LinkPage" id="MQZZmn0YKPUGwWYX" class="Gallery pbEdit sameRatio portraits bottom1 zoom-small" style="margin-top: 4em; margin-bottom: 4em; row-gap: 1vw; column-gap: 1vw; grid-template-columns: repeat(4, 1fr);">
+                        {% get_photo %}
+
+
+                                           {% endblock content %}
+
                         <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
-                            <a href="/brand-1" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
+                            <a href="{% url 'photo_detail' 1 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
                                 <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-y21107V7CUZUS19o.jpg" src="/static/images/IMG_8253.JPG" lazy="loaded"></a><!----><!----><!----></figure>
-                        <figure data-type="Item" id="item-yS7drrgkYhq4dPvE" data-id="yS7drrgkYhq4dPvE" class="Item fade-in">
-                            <a href="/brand-3" class="imgWrapper" target="" id="imgWrapper-yS7drrgkYhq4dPvE" style="height: 39.111111111111114vw;">
-                            <span class="playIcon ficon-playback-play"></span>
-                            <!----><img class="lazy-img" id="img-yS7drrgkYhq4dPvE" height="5919" width="3946" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-o21107hf5ulZK1Er.jpg" src="/static/images/IMG_8254.JPG" lazy="loaded"></a><!----><!----><!----></figure>
-                        <figure data-type="Item" id="item-WLsspnKPRHlIaFHq" data-id="WLsspnKPRHlIaFHq" class="Item fade-in">
-                            <a href="/lxjhyhyjqjuqqvq6" class="imgWrapper" target="" id="imgWrapper-WLsspnKPRHlIaFHq" style="height: 39.111111111111114vw;">
-                            <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-WLsspnKPRHlIaFHq" height="5381" width="3587" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-k21108pMj2zEQM21.jpg" src="/static/images/IMG_8255.JPG" lazy="loaded"></a><!----><!----><!----></figure>
-                        <figure data-type="Item" id="item-br9fkCUSTooUEfMz" data-id="br9fkCUSTooUEfMz" class="Item fade-in">
-                            <a href="/brand-4" class="imgWrapper" target="" id="imgWrapper-br9fkCUSTooUEfMz" style="height: 39.111111111111114vw;">
+                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{ 1|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
+
+                        <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
+                            <a href="{% url 'photo_detail' 2 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
                                 <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-br9fkCUSTooUEfMz" height="6802" width="4535" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-q21107omTH3i66TD.jpg" src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-q21107omTH3i66TD.jpg" lazy="loaded"></a><!----><!----><!----></figure>
-                        <figure data-type="Item" id="item-vvtNwXfKLzRXlpiY" data-id="vvtNwXfKLzRXlpiY" class="Item fade-in"><a href="/sr35lcj5mlagbwby" class="imgWrapper" target="" id="imgWrapper-vvtNwXfKLzRXlpiY" style="height: 39.111111111111114vw;">
-                            <span class="playIcon ficon-playback-play"></span>
-                            <!----><img class="lazy-img" id="img-vvtNwXfKLzRXlpiY" height="3598" width="5397" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-i21107Nv30NFcq99.jpg" src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-i21107Nv30NFcq99.jpg" lazy="loaded"></a><!----><!----><!----></figure>
-                        <figure data-type="Item" id="item-CCH7ZYCoDYDtcnzv" data-id="CCH7ZYCoDYDtcnzv" class="Item fade-in">
-                            <a href="/brand-2" class="imgWrapper" target="" id="imgWrapper-CCH7ZYCoDYDtcnzv" style="height: 39.111111111111114vw;">
+                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{2|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
+
+                        <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
+                            <a href="{% url 'photo_detail' 3 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
                                 <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-CCH7ZYCoDYDtcnzv" height="6016" width="4016" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-m21107rVmftyI0XP.jpg" src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-m21107rVmftyI0XP.jpg" lazy="loaded"></a><!----><!----><!----></figure>
-                        <figure data-type="Item" id="item-Q2H1SmLuiwqSqbKU" data-id="Q2H1SmLuiwqSqbKU" class="Item fade-in"><a href="/tomomika" class="imgWrapper" target="" id="imgWrapper-Q2H1SmLuiwqSqbKU" style="height: 39.111111111111114vw;">
-                            <span class="playIcon ficon-playback-play"></span>
-                            <!----><img class="lazy-img" id="img-Q2H1SmLuiwqSqbKU" height="5979" width="3986" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-p21107WOrEd285nv.jpg" src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-p21107WOrEd285nv.jpg" lazy="loaded"></a><!----><!----><!----></figure>
-                        <figure data-type="Item" id="item-ffY4Xr9X0oHzryen" data-id="ffY4Xr9X0oHzryen" class="Item fade-in"><a href="/poqji2w64lwn8zqz" class="imgWrapper" target="" id="imgWrapper-ffY4Xr9X0oHzryen" style="height: 39.111111111111114vw;">
-                            <span class="playIcon ficon-playback-play"></span>
-                            <!----><img class="lazy-img" id="img-ffY4Xr9X0oHzryen" height="5428" width="3619" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-u211085zjoPaahJk.jpg" src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-u211085zjoPaahJk.jpg" lazy="loaded"></a><!----><!----><!----></figure>
-                        <figure data-type="Item" id="item-JPeTOwnDBjhIMJ7Y" data-id="JPeTOwnDBjhIMJ7Y" class="Item fade-in"><a href="/sija3zrddmyytow7" class="imgWrapper" target="" id="imgWrapper-JPeTOwnDBjhIMJ7Y" style="height: 39.111111111111114vw;">
-                            <span class="playIcon ficon-playback-play"></span>
-                            <!----><img class="lazy-img" id="img-JPeTOwnDBjhIMJ7Y" height="4340" width="6510" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-i21108QbnDSeLcdL.jpg" src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/w1000-i21108QbnDSeLcdL.jpg" lazy="loaded"></a><!----><!----><!----></figure></div><!----><!---->
-                    <div data-elements-position="bottom" class="pbElements pbSortable"></div></section></div><!----></div> <!----> <!----> <!----> <!----> <!----> <!----> <!----></div></div>
+                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{3|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
 
+                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
+                            <a href="{% url 'photo_detail' 4 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
+                                <span class="playIcon ficon-playback-play"></span>
+                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{4|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
 
+                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
+                            <a href="{% url 'photo_detail' 5 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
+                                <span class="playIcon ficon-playback-play"></span>
+                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{5|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
 
+                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
+                            <a href="{% url 'photo_detail' 6 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
+                                <span class="playIcon ficon-playback-play"></span>
+                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{6|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
 
-<iframe name="__privateStripeMetricsController9080" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/m-outer-93afeeb17bc37e711759584dbfc50d47.html#url=https%3A%2F%2Fchenyian.pb.photography%2F&amp;title=HOME%20-%20chenyian%20photography&amp;referrer=&amp;muid=abd04f17-83f2-4516-a173-0292b35e88d84d3e4c&amp;sid=f22344f6-0550-4b36-b862-de9aceec40649e9249&amp;version=6&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important;"></iframe></body></html>
-{% endblock content %}
+                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
+                            <a href="{% url 'photo_detail' 7 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
+                                <span class="playIcon ficon-playback-play"></span>
+                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{7|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
+
+                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
+                            <a href="{% url 'photo_detail' 8 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
+                                <span class="playIcon ficon-playback-play"></span>
+                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{8|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
+

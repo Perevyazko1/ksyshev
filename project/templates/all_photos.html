@@ -1,0 +1,11 @@
+{% block content %}
+
+{% for photo in photos %}
+
+                        <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
+                            <a href="{% url 'photo_detail' photo.id %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
+                                <span class="playIcon ficon-playback-play"></span>
+                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{ photo.image.url }}" lazy="loaded"></a><!----><!----><!----></figure>
+
+{% endfor %}
+{% endblock content %}

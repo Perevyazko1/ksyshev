@@ -1,0 +1,12 @@
+{% block content %}
+
+{% for collage in collages %}
+
+            <div data-type="SingleImageBg" id="yIsez6Jgcq8oJeig" class="SingleImageBg pbEdit fade-in" style="background-size: cover;">
+                <!----> <div class="lazy-img theBgImgDiv" height="auto" width="100%" data-src="https://dif1tzfqclj9f.cloudfront.net/000_clients/3183942/page/a2191oqU4jGhaGg.jpg" lazy="loaded" style="background-image: url({{collage.image.url}});">
+
+            </div><!----></div><div data-elements-position="top" class="pbElements pbSortable"></div></section></div>
+<div class="sectionWrapper mainContentMenuAdjusted inViewPoint"><section id="lmYPZBAgo8RGehSh" data-type="Section" class="Section pbEdit coverTemp" style="padding: 5vh 5vw; justify-content: center; align-items: center; min-height: 100vh;">
+
+{% endfor %}
+{% endblock content %}

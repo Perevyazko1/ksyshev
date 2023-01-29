@@ -1,9 +1,11 @@
 from django.urls import path
 from django.views.decorators.cache import cache_page
 
-from .views import home, PhotoList
+from .views import Home, PhotoList, PhotoDetail
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('', Home.as_view(), name='home'),
     path('photo/', PhotoList.as_view(), name='photo'),
+    path('<int:pk>', PhotoDetail.as_view(), name='photo_detail'),
+
 ]
