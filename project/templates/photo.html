@@ -1,60 +1,20 @@
 {% extends 'default.html' %}
 {% load custom_filters %}
 {% load custom_tags %}
+{% block content %}
 
 
 
 <html id="htmlID" lang="en">
-{% block content %}
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
         <div class="routerViewWrapper">
             <div class="sectionWrapper mainContentMenuAdjusted inViewPoint">
                 <section id="KODsd450sZrZfql2" data-bgimg="" data-type="Section" class="Section pbEdit" style="padding: 5vh 5vw;">
                     <div data-elements-position="top" class="pbElements pbSortable">
                         <h1 data-type="Header" id="McFxeDpkkc4BsZPE" class="Header pbEdit" style="margin-bottom: 0.7em; max-width: 1200px;">ФОТО</h1></div>
-                    <div data-type="LinkPage" id="MQZZmn0YKPUGwWYX" class="Gallery pbEdit sameRatio portraits bottom1 zoom-small" style="margin-top: 4em; margin-bottom: 4em; row-gap: 1vw; column-gap: 1vw; grid-template-columns: repeat(4, 1fr);">
+                            <div data-type="LinkPage" id="MQZZmn0YKPUGwWYX" class="Gallery pbEdit sameRatio portraits bottom1 zoom-small" style="margin-top: 4em; margin-bottom: 4em; row-gap: 1vw; column-gap: 1vw; grid-template-columns: repeat(4, 1fr);">
                         {% get_photo %}
 
 
                                            {% endblock content %}
-
-                        <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
-                            <a href="{% url 'photo_detail' 1 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
-                                <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{ 1|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
-
-                        <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
-                            <a href="{% url 'photo_detail' 2 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
-                                <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{2|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
-
-                        <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
-                            <a href="{% url 'photo_detail' 3 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
-                                <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{3|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
-
-                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
-                            <a href="{% url 'photo_detail' 4 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
-                                <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{4|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
-
-                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
-                            <a href="{% url 'photo_detail' 5 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
-                                <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{5|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
-
-                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
-                            <a href="{% url 'photo_detail' 6 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
-                                <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{6|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
-
-                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
-                            <a href="{% url 'photo_detail' 7 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
-                                <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{7|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
-
-                                                <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
-                            <a href="{% url 'photo_detail' 8 %}" class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
-                                <span class="playIcon ficon-playback-play"></span>
-                                <!----><img class="lazy-img" id="img-LzLjGx1qKDCpWFxJ" height="4016" width="6016"  src="{{8|get_photo }}" lazy="loaded"></a><!----><!----><!----></figure>
 
