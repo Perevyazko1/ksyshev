@@ -48,7 +48,6 @@ def get_photo(context):
     request = context['request']
     page_num = request.GET.get('page',1)
     page = p.page(page_num)
-    print(page)
 
     return {'photos': photos, 'items': page}
 
