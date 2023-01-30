@@ -27,3 +27,14 @@ class PhotoDetail(DetailView):
     model = Post
     template_name = 'photo_id.html'
     context_object_name = 'photo'
+
+
+def contact(request):
+    return render(request, 'contact.html')
+
+
+def video(request):
+    return render(request, 'video.html')
+
+
+
