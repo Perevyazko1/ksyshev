@@ -44,7 +44,7 @@ def current_hour():
 @register.inclusion_tag('all_photos.html', takes_context=True)
 def get_photo(context):
     photos = Post.objects.order_by('id')
-    p = Paginator(photos, 6)
+    p = Paginator(photos, 4)
     request = context['request']
     page_num = request.GET.get('page',1)
     page = p.page(page_num)
