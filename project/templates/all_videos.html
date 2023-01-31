@@ -1,0 +1,24 @@
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'pb4.out.front.ver.1674476800806.css' %}">
+
+{% for video in items %}
+
+    <figure data-type="Item" id="item-LzLjGx1qKDCpWFxJ" data-id="LzLjGx1qKDCpWFxJ" class="Item fade-in">
+        <span  class="imgWrapper" target="" id="imgWrapper-LzLjGx1qKDCpWFxJ" style="height: 39.111111111111114vw;">
+            <span class="playIcon ficon-playback-play"></span>
+            <video controls="controls"    src="{{ video.video.url }}"></video></span><!----><!----><!---->
+    </figure>
+
+{% endfor %}
+</div>
+{% if items.has_previous %}
+    <h1 class="Header pbEdit" >
+        <a href="{% url 'video'  %}?page={{items.previous_page_number}}">Предыдущая страница</a></h1>
+{% endif %}
+{% if items.has_next %}
+    <h1 class="Header pbEdit" >
+        <a href="{% url 'video'  %}?page={{items.next_page_number}}">Следующая страница</a></h1>
+{% endif %}
+{% endblock content %}

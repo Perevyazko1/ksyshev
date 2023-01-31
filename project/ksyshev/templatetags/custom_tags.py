@@ -6,7 +6,7 @@ from django.utils import timezone
 from django import template
 
 
-from ..models import Post, Collage
+from ..models import Post, Collage, Video
 
 register = template.Library()
 
@@ -41,6 +41,7 @@ def url_replace(context, **kwargs):
 def current_hour():
     return timezone.localtime(timezone.now()).hour
 
+
 @register.inclusion_tag('all_photos.html', takes_context=True)
 def get_photo(context):
     photos = Post.objects.order_by('id')
@@ -50,6 +51,17 @@ def get_photo(context):
     page = p.page(page_num)
 
     return {'photos': photos, 'items': page}
+
+
+@register.inclusion_tag('all_videos.html', takes_context=True)
+def get_video(context):
+    videos = Video.objects.order_by('id')
+    p = Paginator(videos, 4)
+    request = context['request']
+    page_num = request.GET.get('page',1)
+    page = p.page(page_num)
+
+    return {'videos': videos, 'items': page}
 
 
 @register.inclusion_tag('all_collage.html')

@@ -24,3 +24,16 @@ class Collage(models.Model):
 
     date_load = models.DateTimeField(auto_now_add=True, verbose_name='Дата загрузки')
     image = models.ImageField(upload_to='static/collage/', default=None)
+
+
+class Video(models.Model):
+    class Meta:
+        verbose_name = u"Видео"
+        verbose_name_plural = u"Видео"
+
+    date_load = models.DateTimeField(auto_now_add=True, verbose_name='Дата загрузки')
+    video = models.FileField(upload_to='static/video/', default=None)
+
+
+    def __str__(self):
+        return f'{self.date_load}| {self.video}'
