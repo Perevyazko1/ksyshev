@@ -3563,7 +3563,7 @@ textarea.form-control-lg {
   margin: 0;
   font-size: 1rem;
   color: #212529;
-  text-align: left;
+  text-align: center;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
@@ -11367,7 +11367,7 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #8a8a8a;
 }
 
 @media (min-width: 992px) {
