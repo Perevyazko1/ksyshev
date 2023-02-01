@@ -4061,6 +4061,8 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   padding-left: 0;
+  text-align: center;
+
   margin-bottom: 0;
   list-style: none;
 }
@@ -11342,6 +11344,7 @@ p {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #212529;
+  background: #dadada;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11349,6 +11352,7 @@ p {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 700;
+  background: #3d3d3d;
 }
 #mainNav .navbar-brand {
   color: #40ff00;
