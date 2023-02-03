@@ -3,13 +3,21 @@
 {% load custom_tags %}
 {% block content %}
 
+<link href="{% static 'css/styles.css' %}" rel="stylesheet" />
 
 
 
 <div class="background">
-    <img lazy="loaded" src="{% get_collage_one %}" >
-    <img lazy="loaded" src="{% get_collage_two %}" >
-    <img lazy="loaded" src="{% get_collage_three %}" >
-    <img lazy="loaded" src="{% get_collage_four %}" >
+    <img    src="{% get_collage_one %}" >
 </div>
+<div class="background">
+    <img    src="{% get_collage_two %}" >
+</div>
+<div class="background">
+    <img    src="{% get_collage_three %}" >
+</div>
+<div class="background">
+    <img    src="{% get_collage_four %}" >
+</div>
+
 {% endblock content %}
