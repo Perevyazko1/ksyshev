@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['985205-ci41159.tmweb.ru',
                  '127.0.0.1',
                  'localhost',
                  'ci41159.tw1.ru',
-                 'ci41159.tw1.ru',
+                 'www.ci41159.tw1.ru',
 
                  ]
 
