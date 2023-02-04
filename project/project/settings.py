@@ -26,7 +26,14 @@ SECRET_KEY = 'django-insecure-#o1gmu7b=&iyyb%xy&ftpl$_)ix1qsfr-ms$m+fj1iw)nivn3)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['985205-ci41159.tmweb.ru','www.985205-ci41159.tmweb.ru','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['985205-ci41159.tmweb.ru',
+                 'www.985205-ci41159.tmweb.ru',
+                 '127.0.0.1',
+                 'localhost',
+                 'ci41159.tw1.ru',
+                 'ci41159.tw1.ru',
+
+                 ]
 
 
 # Application definition
