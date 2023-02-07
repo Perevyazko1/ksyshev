@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: #8a8a8a;
+  color: #ffc800;
   text-decoration: underline;
 }
 a:hover {
-  color: #8a8a8a;
+  color: #cca000;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2506,8 +2506,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
 }
 .form-check-input:checked {
-  background-color: #8a8a8a;
-  border-color: #8a8a8a;
+  background-color: #ffc800;
+  border-color: #ffc800;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
@@ -3943,7 +3943,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color:;
+  color: #ffc800;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4000,7 +4000,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color:;
+  background-color: #ffc800;
 }
 
 .nav-fill > .nav-link,

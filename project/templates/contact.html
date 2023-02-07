@@ -3,30 +3,6 @@
 
 {% block content %}
 
-<div class="background" style="
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-align: center;
-    font-size: 0.96em;
-    font-family: Jura, sans-serif;
-    font-weight: normal;
-    align-self: flex-start;
-    top: 55%;
-    left: 55%;
-    a:hover {color:#6c757d}
-
-">
-    <img    src="/static/images/instagram.jpg" >
-    <h4><a  href="https://t.me/zachimnotokayy">Телеграм</a></h4>
-<h4>Почта: ksyshevchenko.com</h4>
-<h4>Телефон: +79312394348</h4>
-
-</div>
-
-<div >
-</div>
-
-{% endblock content %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +17,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
-                                <input class="form-control" id="id_name" name="name" type="text" placeholder="Ваше имя *" data-sb-validations="required" />
+                                <input class="form-control" id="id_name" type="text" placeholder="Ваше имя *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
 
@@ -77,22 +53,15 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
         <div class="text-center"><input  type="submit" value="Send" ></div>
-        <button class="navbar-toggler" aria-label="Toggle navigation" type="submit" value="Send" >hhjgjh</button>
-                        <button class="navbar-toggler" type="button" aria-controls="navbarResponsive" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-
-        <div class="text-center"><button  class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button  class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
 
 
                 </form>
 
 </body>
 <body>
-    <form method="post">
-    {% csrf_token %}
-        {{ form.as_p }}
-        <input  type="submit" value="Send">
-    </form>
 
 </body>
 
 </html>
+{% endblock content %}
