@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from .models import Post, Collage, Video
+from .models import Post, Collage, Video, Ip
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -31,7 +31,15 @@ class CollageAdmin(admin.ModelAdmin):
         return mark_safe(f"<img src='{object.image.url}'width=50")
 
 
+class IpAdmin(admin.ModelAdmin):
+    model = Ip
+    list_display = ('ip','date_visit')
+    list_filter = ('date_visit',)
+
+
+
 admin.site.register(Post, PostAdmin)
 admin.site.register(Collage, CollageAdmin)
 admin.site.register(Video, VideoAdmin)
+admin.site.register(Ip, IpAdmin)
 
