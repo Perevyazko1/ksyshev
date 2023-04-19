@@ -3,7 +3,7 @@
 {% block content %}
 <span class="collage">
 {% for collages in collage %}
-<img style="None" src="{{ collages.image.url }}">
+<img style="max-width: 100%; height: auto;" src="{{ collages.image.url }}">
 
     {%endfor%}
 </span>

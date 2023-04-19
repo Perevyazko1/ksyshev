@@ -15,7 +15,7 @@
     <div class="body-grid">
         {%for videos in video %}
     <span class="photo">
-            <video  controls volume="-300" lazy="loaded">
+            <video  controls preload="metadata" volume="-300"  lazy="loaded">
                 <source  src="{{ videos.video.url }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
     </span>
