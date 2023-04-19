@@ -1,9 +1,12 @@
+{% extends 'index.html' %}
+
 {% block content %}
+<span class="collage">
+{% for collages in collage %}
+<img style="None" src="{{ collages.image.url }}">
 
-{% for collage in collages %}
-    <div  style="background-image: url({{collage.image.url}});">
+    {%endfor%}
+</span>
 
-            </div>
 
-{% endfor %}
 {% endblock content %}

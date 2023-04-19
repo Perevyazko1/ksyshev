@@ -10858,7 +10858,7 @@ section {
 
 }
 
-img {
+.img-portfolio {
   transition: transform 0.75s;
     width: 313px;
   height: 503px;
@@ -10867,9 +10867,9 @@ img {
 
 }
 video{
-      width: 313px;
+      /*width: 313px;*/
   height: 503px;
-  /*margin: 20px;*/
+  margin: 13px;
   border-radius: 1%;
 
 }
@@ -10890,4 +10890,8 @@ video{
     /*overflow: hidden;*/
   margin-bottom: 20px;
   margin-top: 115px;
+}
+.collage{
+      grid-template-columns: repeat(1,1fr);
+
 }

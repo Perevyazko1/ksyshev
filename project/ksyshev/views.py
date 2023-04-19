@@ -12,7 +12,7 @@ from .models import Post, Collage, Ip, Video
 class Home(ListView):
     raise_exception = True
     model = Collage
-    template_name = 'index.html'
+    template_name = 'all_collage.html'
     context_object_name = 'collage'
 
 
