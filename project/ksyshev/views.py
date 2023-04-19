@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import View, ListView, DetailView
 
-from .models import Post, Collage, Ip
+from .models import Post, Collage, Ip, Video
 
 
 # def home(request):
@@ -21,6 +21,13 @@ class PhotoList(ListView):
     model = Post
     template_name = 'photo.html'
     context_object_name = 'photo'
+
+
+class VideoList(ListView):
+    raise_exception = True
+    model = Video
+    template_name = 'video.html'
+    context_object_name = 'video'
 
 
 class PhotoDetail(DetailView):
@@ -59,8 +66,8 @@ def contact(request):
     return render(request, 'contact.html')
 
 
-def video(request):
-    return render(request, 'video.html')
+# def video(request):
+#     return render(request, 'video.html')
 
 
 
