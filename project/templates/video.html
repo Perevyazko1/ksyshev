@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 {% extends 'index.html' %}
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/style.css/">
-
-    <title>Title</title>
-</head>
-
-
 
 {% block content %}
     <div class="body-grid">
         {%for videos in video %}
     <span class="photo">
-            <video  controls preload="metadata" volume="-300"  lazy="loaded">
+            <video  controls preload="auto" volume="-300"  lazy="loaded">
                 <source  src="{{ videos.video.url }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
     </span>
@@ -23,4 +12,3 @@
     </div>
 {% endblock content %}
 
-</html>
