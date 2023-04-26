@@ -5,7 +5,11 @@
         {%for videos in video %}
     <span class="photo">
             <video  controls preload="metadata" volume="-300"  lazy="loaded">
+                <source  src="{{ videos.video.url }}#t=0.1" type='video/mp4; codecs=hevc,mp4a.40.2"'>
+                <source  src="{{ videos.video.url }}#t=0.1" type='video/mp4; codecs="av01.0.05M.08,opus"'>
                 <source  src="{{ videos.video.url }}#t=0.1" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+
+
             </video>
     </span>
     {%endfor%}
