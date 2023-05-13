@@ -10887,7 +10887,7 @@ section {
 
 }
 video{
-      /*width: 313px;*/
+  /*width: 333px;*/
   height: 503px;
   margin: 13px;
   border-radius: 1%;
@@ -10902,8 +10902,10 @@ video{
 /*    width: 100%;*/
 /*}*/
 .body-grid {
-  display: grid; justify-items: center;
-    grid-template-columns: repeat(4,1fr);
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit,320px);
     grid-gap: 2vw;
     /*margin-left: 25px;*/
     /*width: 100%;*/
