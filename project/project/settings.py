@@ -253,7 +253,7 @@ LOGGING = {
             'filters': ['require_debug_true'],
             'class': 'logging.FileHandler',
             'filename': 'console.log',
-            'formatter': 'simple'
+            'formatter': 'formatter_errors'
         },
 
         'general': {
