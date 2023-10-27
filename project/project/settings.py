@@ -34,6 +34,9 @@ ALLOWED_HOSTS = ['985205-ci41159.tmweb.ru',
                  'www.ci41159.tw1.ru',
                  '192.168.1.188',
                  '192.168.31.196',
+                 '192.168.31.194',
+                 '684527-cc82345.tmweb.ru',
+                 '188.225.47.208'
 
 
                  ]
@@ -319,22 +322,3 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],}
 CORS_ALLOW_ALL_ORIGINS = True
-
-CORS_ORIGIN_ALLOW_ALL = True
-
-CORS_ALLOW_METHODS = [
-      'GET',
-      'POST',
-      'PUT',
-      'PATCH',
-      'DELETE',
-      'OPTIONS'
-  ]
-
-CORS_ALLOWED_HEADERS = [
-    'accept',
-    'accept-encoding',
-    'authorization',
-    'content-type',
-    'Cross-Origin-Opener-Policy'  # Add this line
-]
